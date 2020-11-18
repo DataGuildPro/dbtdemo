@@ -6,7 +6,7 @@
 }}
 
 select id , title, answer_count, comment_count, creation_date, favorite_count, last_activity_date, score, tags, view_count 
-from stackoverflow.posts_answers
+from `bigquery-public-data.stackoverflow.posts_answers`
 
 {% if is_incremental() %}
 
